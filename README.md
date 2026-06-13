@@ -9,7 +9,7 @@ A modern and elegant personal portfolio website built to present my projects, sk
 
 ## Live Demo 🚀
 
-You can view the live website here: [Live Demo](https://Soumyadipprotoflio.netlify.app/)
+You can view the live website here: [Live Demo](https://Soumyadipprotoflio.netlify.app/](https://soumyadip-pramanik-portfolio.netlify.app/))
 
 ---
 
