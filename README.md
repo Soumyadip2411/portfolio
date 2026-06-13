@@ -1,4 +1,5 @@
-![Logo](Photo.png)
+![Logo](<img width="1333" height="593" alt="image" src="https://github.com/user-attachments/assets/ed2f48a0-723a-487d-bd87-fad7f3f64444" />
+)
 
 # Soumyadip Portfolio Showcase 💻
 
