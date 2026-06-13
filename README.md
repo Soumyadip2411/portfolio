@@ -1,14 +1,15 @@
-![Logo](Photo.png)
+<img width="1333" height="593" alt="Screenshot 2026-06-14 024021" src="https://github.com/user-attachments/assets/fb686a6c-73e0-4d69-9baf-fe2e7ba36272" />
 
-# Amine Portfolio Showcase 💻
 
-Welcome to Amine's Portfolio Showcase!
+# Soumyadip Portfolio Showcase 💻
+
+Welcome to Soumyadip's Portfolio Showcase!
 A modern and elegant personal portfolio website built to present my projects, skills, and professional journey using React.JS.
 ---
 
 ## Live Demo 🚀
 
-You can view the live website here: [Live Demo](https://amineprotoflio.netlify.app/)
+You can view the live website here: [Live Demo](https://Soumyadipprotoflio.netlify.app/)
 
 ---
 
@@ -48,20 +49,20 @@ You can view the live website here: [Live Demo](https://amineprotoflio.netlify.a
 
  **Clone the repository:**
 ```bash
-git clone https://github.com/Saboo24/portofolio12.git
+git clone https://github.com/Soumyadip2411/portfolio.git
 ```
  ---
 
 ## 📬 Contact
 
-- Email: aminehamzaoui1925@gmail.com   
-- Location: Boumerdès, Algeria  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-amine-hamzaoui-a2453a35b/)  
-- GitHub: [GitHub](https://github.com/Saboo24)  
-- Instagram: [Instagram](https://www.instagram.com/a__m.i.n__e/?utm_source=ig_web_button_share_sheet)
+- Email: Soumyadip2411@gmail.com   
+- Location: Kolkata, India 
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soumyadip-pramanik/)  
+- GitHub: [GitHub](https://github.com/Soumyadip2411)  
+- Instagram: [Instagram](https://www.instagram.com/soumyadippramanik004/)
 
 ---
 
-Made with ❤️ by **Amine Hamzaoui**
+Made with ❤️ by **Soumyadip Pramanik**
 
 
