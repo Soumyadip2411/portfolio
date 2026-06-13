@@ -1,0 +1,148 @@
+.experience {
+  color: white;
+  padding: 80px;
+  margin: 0px 120px;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.experience .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experience .title h2 {
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.experience .title h2::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: #00f0ff;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid rgba(0, 240, 255, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -46px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #020617;
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  font-size: 14px;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.experience-header h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.experience-header .company {
+  font-size: 16px;
+  color: #00f0ff;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+}
+
+.experience-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.experience-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.experience-details {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-details li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+
+.experience-details li::before {
+  content: "•";
+  color: #00f0ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 40px 20px;
+    margin: 0 20px 60px;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
