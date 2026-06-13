@@ -1,5 +1,5 @@
-![Logo](<img width="1333" height="593" alt="image" src="https://github.com/user-attachments/assets/ed2f48a0-723a-487d-bd87-fad7f3f64444" />
-)
+<img width="1333" height="593" alt="Screenshot 2026-06-14 024021" src="https://github.com/user-attachments/assets/fb686a6c-73e0-4d69-9baf-fe2e7ba36272" />
+
 
 # Soumyadip Portfolio Showcase 💻
 
