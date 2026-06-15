@@ -1,4 +1,3 @@
-import React from "react";
 import "./Experience.css";
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -6,6 +5,7 @@ function Experience() {
   return (
     <section className="experience" id="experience">
       <div className="title">
+        <p className="section-kicker">Experience</p>
         <h2>Professional Experience</h2>
       </div>
 
@@ -19,10 +19,10 @@ function Experience() {
               <h3>AI Engineer Intern</h3>
               <span className="company">EY (Ernst & Young)</span>
             </div>
-            
+
             <div className="experience-meta">
               <span className="duration">
-                <FaCalendarAlt /> 01/2026 – 05/2026
+                <FaCalendarAlt /> Jan 2026 - May 2026
               </span>
               <span className="location">
                 <FaMapMarkerAlt /> Kolkata, India
@@ -31,16 +31,16 @@ function Experience() {
 
             <ul className="experience-details">
               <li>
-                Worked directly with the US BCM team at EY to develop enterprise-scale AI solutions.
+                Built enterprise AI workflows with the US BCM team at EY, translating business review processes into usable internal tools.
               </li>
               <li>
-                Automated EUC (End-User Computing) sheet-wise analysis and governance.
+                Automated EUC sheet-wise analysis, governance checks, and structured documentation generation.
               </li>
               <li>
-                Built robust document ingestion and well-structured documentation generation pipelines using LLMs and RAG frameworks.
+                Created document ingestion and retrieval workflows using LLMs and RAG patterns.
               </li>
               <li>
-                Designed systems featuring Human-In-The-Loop (HITL) checkpoints and interactive chatbot interfaces.
+                Added Human-In-The-Loop checkpoints and chatbot interfaces to keep outputs reviewable and practical.
               </li>
             </ul>
           </div>

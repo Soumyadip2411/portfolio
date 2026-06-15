@@ -1,28 +1,53 @@
+import { useState } from "react";
 import "./Header.css";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaBars, FaEnvelope, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 
 function Header() {
-    return (
-        <div className="header">
-            <div className="logo1">
-                <h1><span>S</span>oumyadip</h1>
-            </div>
-            
-            <div className="social-links">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a href="mailto:your.email@example.com"><FaEnvelope /></a>
-            </div>
+  const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => setIsOpen(false);
 
-            <ul className="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#serv">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    )
+  return (
+    <header className="header">
+      <div className="logo1">
+        <a href="#home" onClick={closeMenu}>
+          <span>S</span>oumyadip
+        </a>
+      </div>
+
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label={isOpen ? "Close navigation" : "Open navigation"}
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((current) => !current)}
+      >
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <div className="social-links">
+        <a href="https://github.com/Soumyadip2411" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/soumyadip-pramanik/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+        <a href="mailto:soumyadip2411@gmail.com" aria-label="Email">
+          <FaEnvelope />
+        </a>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul className={`links ${isOpen ? "open" : ""}`}>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+          <li><a href="#project" onClick={closeMenu}>Projects</a></li>
+          <li><a href="#serv" onClick={closeMenu}>Strengths</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
+
 export default Header;

@@ -1,5 +1,5 @@
 import "./About.css";
-import Me from "../../assets/images/Me.jpg";
+import Me from "../../assets/images/Me3.jpeg";
 import Skills from "./Skills";
 
 

@@ -1,57 +1,48 @@
 import { useEffect, useState } from "react";
 import "./Intro.css";
 
-const text = "Welcome To My Portfolio";
+const text = "AI Engineer. Full-Stack Developer.";
 
 function Intro({ onFinish }) {
   const [phase, setPhase] = useState(0);
   const [typed, setTyped] = useState("");
 
   useEffect(() => {
-    // 1: portal يظهر
-    setTimeout(() => setPhase(1), 300);
+    const timers = [
+      setTimeout(() => setPhase(1), 150),
+      setTimeout(() => setPhase(2), 650),
+      setTimeout(() => setPhase(3), 1200),
+      setTimeout(() => setPhase(4), 1450),
+      setTimeout(() => {
+        setPhase(5);
+        setTimeout(onFinish, 600);
+      }, 3100)
+    ];
 
-    // 2: يظهر AMINE
-    setTimeout(() => setPhase(2), 1200);
-
-    // 3: explosion
-    setTimeout(() => setPhase(3), 2200);
-
-    // 4: typing
-    setTimeout(() => setPhase(4), 2600);
-
-    // typing effect
     let i = 0;
     const typing = setInterval(() => {
       setTyped(text.slice(0, i));
-      i++;
+      i += 1;
       if (i > text.length) clearInterval(typing);
-    }, 60);
+    }, 40);
 
-    // 5: دخول الموقع
-    setTimeout(() => {
-      setPhase(5);
-      setTimeout(onFinish, 1000);
-    }, 5000);
-
-    return () => clearInterval(typing);
-  }, []);
+    return () => {
+      clearInterval(typing);
+      timers.forEach(clearTimeout);
+    };
+  }, [onFinish]);
 
   return (
     <div className={`intro phase-${phase}`}>
-
-      {/* PORTAL */}
       <div className="portal"></div>
-
-      {/* LOGO */}
       <h1 className="logo">SOUMYADIP</h1>
-
-      {/* TEXT */}
       <h1 className="main-text">
         {typed}
         <span className="cursor">|</span>
       </h1>
-
+      <button className="skip-intro" type="button" onClick={onFinish}>
+        Skip
+      </button>
     </div>
   );
 }

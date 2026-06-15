@@ -1,36 +1,30 @@
 .intro {
   position: fixed;
   inset: 0;
-  background: black;
+  z-index: 9999;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  z-index: 9999;
-  color: #00f0ff;
+  color: var(--text);
+  background: #030712;
 }
 
 .portal {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-
-  background: radial-gradient(circle, #00f0ff, transparent 70%);
-  box-shadow:
-    0 0 30px #00f0ff,
-    0 0 80px #00f0ff,
-    0 0 150px #00f0ff;
-
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.75), transparent 68%);
   opacity: 0;
-  transform: scale(0.3);
-  transition: 0.6s;
+  transform: scale(0.4);
+  transition: 0.5s ease;
 }
 
 .phase-1 .portal {
   opacity: 1;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 .phase-2 .portal {
@@ -38,22 +32,27 @@
 }
 
 .phase-3 .portal {
-  transform: scale(10);
   opacity: 0;
+  transform: scale(8);
+}
+
+.logo,
+.main-text {
+  position: absolute;
+  text-align: center;
 }
 
 .logo {
-  position: absolute;
-  font-size: 35px;
+  font-size: clamp(28px, 7vw, 56px);
+  font-weight: 800;
   opacity: 0;
-  transform: scale(0.5);
-  transition: 0.5s;
+  transform: scale(0.8);
+  transition: 0.35s ease;
 }
 
 .phase-2 .logo {
   opacity: 1;
-  transform: scale(1.5);
-  text-shadow: 0 0 30px #00f0ff;
+  transform: scale(1);
 }
 
 .phase-3 .logo {
@@ -61,40 +60,54 @@
 }
 
 .main-text {
-  position: absolute;
-  font-size: 40px;
+  max-width: 90vw;
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: 800;
   opacity: 0;
-  transform: translateY(20px);
-  transition: 0.5s;
+  transform: translateY(18px);
+  transition: 0.35s ease;
 }
 
 .phase-4 .main-text {
   opacity: 1;
   transform: translateY(0);
-  text-shadow:
-    0 0 10px #00f0ff,
-    0 0 30px #00f0ff;
 }
 
 .cursor {
+  color: var(--accent);
   animation: blink 0.7s infinite;
 }
 
-@keyframes blink {
-  50% { opacity: 0; }
+.skip-intro {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  padding: 9px 14px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.skip-intro:hover {
+  color: var(--text);
+  background: var(--surface-strong);
 }
 
 .phase-5 {
-  animation: portalZoom 1s forwards;
+  animation: fadeIntro 0.6s forwards;
 }
 
-@keyframes portalZoom {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
+@keyframes blink {
+  50% {
     opacity: 0;
-    transform: scale(1.5);
+  }
+}
+
+@keyframes fadeIntro {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
   }
 }

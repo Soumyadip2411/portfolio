@@ -1,68 +1,51 @@
-<img width="1333" height="593" alt="Screenshot 2026-06-14 024021" src="https://github.com/user-attachments/assets/fb686a6c-73e0-4d69-9baf-fe2e7ba36272" />
+<img width="1333" height="593" alt="Soumyadip Portfolio screenshot" src="https://github.com/user-attachments/assets/fb686a6c-73e0-4d69-9baf-fe2e7ba36272" />
 
+# Soumyadip Pramanik Portfolio
 
-# Soumyadip Portfolio Showcase 💻
+A modern React portfolio for showcasing my AI engineering, full-stack development, projects, skills, and professional experience.
 
-Welcome to Soumyadip's Portfolio Showcase!
-A modern and elegant personal portfolio website built to present my projects, skills, and professional journey using React.JS.
----
+## Live Demo
 
-## Live Demo 🚀
+[View Portfolio](https://Soumyadipprotoflio.netlify.app/)
 
-You can view the live website here: [Live Demo](https://Soumyadipprotoflio.netlify.app/)
+## Sections
 
----
+- **Home**: Concise introduction, role positioning, quick achievements, and primary calls to action.
+- **About**: Background, competitive programming profile, internship context, and skill stack.
+- **Experience**: AI Engineer internship experience at EY with practical project responsibilities.
+- **Projects**: Selected projects with descriptions, tech stacks, impact notes, code links, and demo links.
+- **Core Strengths**: Applied AI, full-stack product development, and data automation focus areas.
+- **Contact**: Clickable contact details and a mailto-powered contact form.
 
-## 🌟 Website Sections
+## Features
 
-- **Home**: Developer introduction with avatar and short description  
-- **About**: Experience, tech stack, personal insights, and skill cards  
-- **Projects**: Showcase of projects with images, descriptions, and skills  
-- **Services**: Highlighting services offered with interactive cards  
-- **Contact**: Contact form and social links with interactive hover effects  
+- React + Vite application structure
+- Responsive layout for desktop, tablet, and mobile
+- Professional dark UI with restrained accent styling
+- Reusable section-based components
+- Project cards with impact-oriented summaries
+- Mobile navigation menu
 
----
+## Technologies
 
-## ⚡ Features
+- React.js
+- Vite
+- JavaScript
+- CSS3
+- React Icons
 
-- Clean & modern UI design
-- Smooth animations and transitions
-- Fully responsive (Desktop / Tablet / Mobile)
-- Interactive sections & hover effects
-- Clean and organized code structure
-- Fast performance & lightweight 
+## Run Locally
 
----
-
-## 🛠 Technologies Used
-
-- **React.js** – Building reusable UI components  
-- **Vite** – Fast development environment and build tool  
-- **JavaScript (ES6+)** – Application logic and functionality  
-- **CSS3** – Styling and responsive layout  
-- **Font Awesome / Boxicons** – Icons – Scroll animations  
-
----
-
-
-## 🚀 How to Use / Customize
-
- **Clone the repository:**
 ```bash
-git clone https://github.com/Soumyadip2411/portfolio.git
+npm install
+npm run dev
 ```
- ---
 
-## 📬 Contact
+## Contact
 
-- Email: Soumyadip2411@gmail.com   
-- Location: Kolkata, India 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soumyadip-pramanik/)  
-- GitHub: [GitHub](https://github.com/Soumyadip2411)  
-- Instagram: [Instagram](https://www.instagram.com/soumyadippramanik004/)
+- Email: [soumyadip2411@gmail.com](mailto:soumyadip2411@gmail.com)
+- Location: Kolkata, India
+- LinkedIn: [soumyadip-pramanik](https://www.linkedin.com/in/soumyadip-pramanik/)
+- GitHub: [Soumyadip2411](https://github.com/Soumyadip2411)
 
----
-
-Made with ❤️ by **Soumyadip Pramanik**
-
-
+Made by **Soumyadip Pramanik**.

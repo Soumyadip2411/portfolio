@@ -1,40 +1,35 @@
-import "./Services.css"
-import { FaCode, FaBrain, FaDatabase } from "react-icons/fa";
+import "./Services.css";
+import { FaBrain, FaCode, FaDatabase } from "react-icons/fa";
 
-function Services(){
-
-  return(
-    <div className="services" id="serv">
-
+function Services() {
+  return (
+    <section className="services" id="serv">
       <div className="title">
-        <h2>Expertise & Services</h2>
+        <p className="section-kicker">Core Strengths</p>
+        <h2>What I build best</h2>
       </div>
 
       <div className="services-container">
+        <article className="service-card">
+          <FaBrain className="service-icon" />
+          <h3>Applied AI Systems</h3>
+          <p>LLM/RAG workflows, document intelligence, ML pipelines, and review-friendly AI interfaces.</p>
+        </article>
 
-        <div className="service-card">
-          <FaBrain className="service-icon"/>
-          <h3>AI & Machine Learning</h3>
-          <p>Developing enterprise-grade AI solutions, Retrieval-Augmented Generation (RAG), and advanced Deep Learning classifiers.</p>
-        </div>
+        <article className="service-card">
+          <FaCode className="service-icon" />
+          <h3>Full-Stack Products</h3>
+          <p>Responsive MERN applications with authentication, dashboards, APIs, and real-time collaboration.</p>
+        </article>
 
-        <div className="service-card">
-          <FaCode className="service-icon"/>
-          <h3>Full-Stack Development</h3>
-          <p>Building high-performance, real-time web applications using the MERN stack with modern responsive designs.</p>
-        </div>
-
-        <div className="service-card">
-          <FaDatabase className="service-icon"/>
-          <h3>Data Science & Analytics</h3>
-          <p>Designing robust data pipelines, feature engineering, statistical modeling, and interactive dashboards.</p>
-        </div>
-
+        <article className="service-card">
+          <FaDatabase className="service-icon" />
+          <h3>Data & Automation</h3>
+          <p>Data cleaning, feature engineering, analytics dashboards, and workflow automation for practical decisions.</p>
+        </article>
       </div>
-
-    </div>
-  )
-
+    </section>
+  );
 }
 
 export default Services;
