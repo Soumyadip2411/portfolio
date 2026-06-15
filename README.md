@@ -8,7 +8,11 @@ A modern React portfolio for showcasing my AI engineering, full-stack developmen
 
 [View Portfolio](https://Soumyadipprotoflio.netlify.app/)
 
+<<<<<<< HEAD
 ## Sections
+=======
+You can view the live website here: [Live Demo](https://soumyadip-pramanik-portfolio.netlify.app/)
+>>>>>>> 83daa412c650dc38b3c2ebff6bf91e44c49a9117
 
 - **Home**: Concise introduction, role positioning, quick achievements, and primary calls to action.
 - **About**: Background, competitive programming profile, internship context, and skill stack.
